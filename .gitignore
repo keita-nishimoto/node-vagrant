@@ -1,0 +1,22 @@
+# Eclipse 設定ファイル
+.settings/
+*.prefs
+
+# Eclipse Projectファイル
+.project
+
+# Eclipse Project includePath設定ファイル
+.buildpath
+
+# NetBeansプロジェクト設定ディレクトリ
+nbproject/
+
+# Mac用ディレクトリ設定ファイル
+.DS_Store
+
+# vagrant自動生成ファイル郡
+.vagrant
+
+# IntelliJ IDEA設定ファイル
+.idea
+nodejs_mongodb.provision.iml
