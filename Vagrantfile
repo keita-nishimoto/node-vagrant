@@ -15,6 +15,7 @@ Vagrant.configure(2) do |config|
 
   %w(
     react_tutorial_es5
+    react_tutorial_es6
   ).each do |dir|
     config.vm.synced_folder "../#{dir}", "/home/vagrant/#{dir}", mount_options: ["dmode=777","fmode=777"] if  File.exist?("../#{dir}")
   end
