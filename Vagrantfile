@@ -13,13 +13,6 @@ Vagrant.configure(2) do |config|
     vm.customize ["modifyvm", :id, "--memory", "1024", "--cpus", "2", "--ioapic", "on"]
   end
 
-  %w(
-    react_tutorial_es5
-    react_tutorial_es6
-  ).each do |dir|
-    config.vm.synced_folder "../#{dir}", "/home/vagrant/#{dir}", mount_options: ["dmode=777","fmode=777"] if  File.exist?("../#{dir}")
-  end
-
   config.vm.provision "ansible" do |ansible|
     ansible.limit = "all"
     ansible.inventory_path = "../node-ansible/local"
