@@ -1,10 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# Node.js + MongoDBのローカル開発環境作成用Vagrantfile
-# @see https://atlas.hashicorp.com/centos/boxes/7
-# @author keita-nishimoto
-# @since  2016-04-21
 Vagrant.configure(2) do |config|
   config.ssh.insert_key = false
   config.vm.box = "centos/7"
